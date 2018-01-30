@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		914085D92020DB36009153E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 914085D82020DB36009153E7 /* AppDelegate.m */; };
+		914085DC2020DB36009153E7 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914085DB2020DB36009153E7 /* MasterViewController.m */; };
+		914085DF2020DB36009153E7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914085DE2020DB36009153E7 /* DetailViewController.m */; };
+		914085E22020DB36009153E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914085E02020DB36009153E7 /* Main.storyboard */; };
+		914085E42020DB36009153E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914085E32020DB36009153E7 /* Assets.xcassets */; };
+		914085E72020DB36009153E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914085E52020DB36009153E7 /* LaunchScreen.storyboard */; };
+		914085EA2020DB36009153E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 914085E92020DB36009153E7 /* main.m */; };
+		914085F22020DC1D009153E7 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 914085F12020DC1D009153E7 /* Todo.m */; };
+		914085F52020DD1B009153E7 /* TodoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 914085F42020DD1B009153E7 /* TodoTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		914085D42020DB36009153E7 /* EveryDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveryDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		914085D72020DB36009153E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		914085D82020DB36009153E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		914085DA2020DB36009153E7 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		914085DB2020DB36009153E7 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		914085DD2020DB36009153E7 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		914085DE2020DB36009153E7 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		914085E12020DB36009153E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		914085E32020DB36009153E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		914085E62020DB36009153E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		914085E82020DB36009153E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		914085E92020DB36009153E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		914085F02020DC1D009153E7 /* Todo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
+		914085F12020DC1D009153E7 /* Todo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
+		914085F32020DD1B009153E7 /* TodoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoTableViewCell.h; sourceTree = "<group>"; };
+		914085F42020DD1B009153E7 /* TodoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		914085D12020DB36009153E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		914085CB2020DB36009153E7 = {
+			isa = PBXGroup;
+			children = (
+				914085D62020DB36009153E7 /* EveryDo */,
+				914085D52020DB36009153E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		914085D52020DB36009153E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				914085D42020DB36009153E7 /* EveryDo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		914085D62020DB36009153E7 /* EveryDo */ = {
+			isa = PBXGroup;
+			children = (
+				914085D72020DB36009153E7 /* AppDelegate.h */,
+				914085D82020DB36009153E7 /* AppDelegate.m */,
+				914085DA2020DB36009153E7 /* MasterViewController.h */,
+				914085DB2020DB36009153E7 /* MasterViewController.m */,
+				914085DD2020DB36009153E7 /* DetailViewController.h */,
+				914085DE2020DB36009153E7 /* DetailViewController.m */,
+				914085F02020DC1D009153E7 /* Todo.h */,
+				914085F32020DD1B009153E7 /* TodoTableViewCell.h */,
+				914085F42020DD1B009153E7 /* TodoTableViewCell.m */,
+				914085F12020DC1D009153E7 /* Todo.m */,
+				914085E02020DB36009153E7 /* Main.storyboard */,
+				914085E32020DB36009153E7 /* Assets.xcassets */,
+				914085E52020DB36009153E7 /* LaunchScreen.storyboard */,
+				914085E82020DB36009153E7 /* Info.plist */,
+				914085E92020DB36009153E7 /* main.m */,
+			);
+			path = EveryDo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		914085D32020DB36009153E7 /* EveryDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 914085ED2020DB36009153E7 /* Build configuration list for PBXNativeTarget "EveryDo" */;
+			buildPhases = (
+				914085D02020DB36009153E7 /* Sources */,
+				914085D12020DB36009153E7 /* Frameworks */,
+				914085D22020DB36009153E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EveryDo;
+			productName = EveryDo;
+			productReference = 914085D42020DB36009153E7 /* EveryDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		914085CC2020DB36009153E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = YongwooHuh;
+				TargetAttributes = {
+					914085D32020DB36009153E7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 914085CF2020DB36009153E7 /* Build configuration list for PBXProject "EveryDo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 914085CB2020DB36009153E7;
+			productRefGroup = 914085D52020DB36009153E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				914085D32020DB36009153E7 /* EveryDo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		914085D22020DB36009153E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				914085E72020DB36009153E7 /* LaunchScreen.storyboard in Resources */,
+				914085E42020DB36009153E7 /* Assets.xcassets in Resources */,
+				914085E22020DB36009153E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		914085D02020DB36009153E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				914085F22020DC1D009153E7 /* Todo.m in Sources */,
+				914085F52020DD1B009153E7 /* TodoTableViewCell.m in Sources */,
+				914085DC2020DB36009153E7 /* MasterViewController.m in Sources */,
+				914085D92020DB36009153E7 /* AppDelegate.m in Sources */,
+				914085EA2020DB36009153E7 /* main.m in Sources */,
+				914085DF2020DB36009153E7 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		914085E02020DB36009153E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				914085E12020DB36009153E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		914085E52020DB36009153E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				914085E62020DB36009153E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		914085EB2020DB36009153E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		914085EC2020DB36009153E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		914085EE2020DB36009153E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EveryDo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yongwoo.EveryDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		914085EF2020DB36009153E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EveryDo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yongwoo.EveryDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		914085CF2020DB36009153E7 /* Build configuration list for PBXProject "EveryDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				914085EB2020DB36009153E7 /* Debug */,
+				914085EC2020DB36009153E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		914085ED2020DB36009153E7 /* Build configuration list for PBXNativeTarget "EveryDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				914085EE2020DB36009153E7 /* Debug */,
+				914085EF2020DB36009153E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 914085CC2020DB36009153E7 /* Project object */;
+}
