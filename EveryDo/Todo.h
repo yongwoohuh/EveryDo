@@ -16,5 +16,6 @@
 @property (nonatomic, assign) BOOL isComplete;
 
 - (instancetype)initWithTitle:(NSString *)title description:(NSString *)todoDescription priorityNumber:(NSInteger)pNumber;
+- (BOOL)isValid;
 
 @end

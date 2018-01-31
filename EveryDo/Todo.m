@@ -22,4 +22,10 @@
     return self;
 }
 
+- (BOOL)isValid
+{
+    // validate
+    return YES;
+}
+
 @end

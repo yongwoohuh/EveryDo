@@ -16,6 +16,7 @@
 		914085EA2020DB36009153E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 914085E92020DB36009153E7 /* main.m */; };
 		914085F22020DC1D009153E7 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 914085F12020DC1D009153E7 /* Todo.m */; };
 		914085F52020DD1B009153E7 /* TodoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 914085F42020DD1B009153E7 /* TodoTableViewCell.m */; };
+		914085F8202105F1009153E7 /* AddTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914085F7202105F1009153E7 /* AddTodoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		914085F12020DC1D009153E7 /* Todo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
 		914085F32020DD1B009153E7 /* TodoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoTableViewCell.h; sourceTree = "<group>"; };
 		914085F42020DD1B009153E7 /* TodoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoTableViewCell.m; sourceTree = "<group>"; };
+		914085F6202105F1009153E7 /* AddTodoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTodoViewController.h; sourceTree = "<group>"; };
+		914085F7202105F1009153E7 /* AddTodoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTodoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				914085F42020DD1B009153E7 /* TodoTableViewCell.m */,
 				914085F12020DC1D009153E7 /* Todo.m */,
 				914085E02020DB36009153E7 /* Main.storyboard */,
+				914085F6202105F1009153E7 /* AddTodoViewController.h */,
+				914085F7202105F1009153E7 /* AddTodoViewController.m */,
 				914085E32020DB36009153E7 /* Assets.xcassets */,
 				914085E52020DB36009153E7 /* LaunchScreen.storyboard */,
 				914085E82020DB36009153E7 /* Info.plist */,
@@ -112,6 +117,12 @@
 		914085CC2020DB36009153E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+					2,
+					description,
+					todo,
+				);
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = YongwooHuh;
 				TargetAttributes = {
@@ -159,6 +170,7 @@
 			files = (
 				914085F22020DC1D009153E7 /* Todo.m in Sources */,
 				914085F52020DD1B009153E7 /* TodoTableViewCell.m in Sources */,
+				914085F8202105F1009153E7 /* AddTodoViewController.m in Sources */,
 				914085DC2020DB36009153E7 /* MasterViewController.m in Sources */,
 				914085D92020DB36009153E7 /* AppDelegate.m in Sources */,
 				914085EA2020DB36009153E7 /* main.m in Sources */,

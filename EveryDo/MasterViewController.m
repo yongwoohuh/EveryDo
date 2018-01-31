@@ -10,12 +10,14 @@
 #import "DetailViewController.h"
 #import "Todo.h"
 #import "TodoTableViewCell.h"
+#import "AddTodoViewController.h"
 
 @interface MasterViewController ()
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addTodoButton;
 
 
 @property NSMutableArray<Todo *> *todoList;
-@property NSMutableArray *objects;
+
 @end
 
 @implementation MasterViewController
@@ -25,8 +27,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+//    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+//    self.navigationItem.rightBarButtonItem = addButton;
     
     // setup todo data
     Todo *todo1 = [[Todo alloc] initWithTitle:@"make bed" description:@"make bed right after getting up." priorityNumber:1];
@@ -48,28 +50,28 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (void)insertNewObject:(id)sender {
-    if (!self.objects) {
-        self.objects = [[NSMutableArray alloc] init];
-    }
-    [self.objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-}
-
-
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+    if ([segue.identifier isEqualToString:@"showTodoDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
+        Todo *todo = self.todoList[indexPath.row];
         DetailViewController *controller = (DetailViewController *)[segue destinationViewController];
-        [controller setDetailItem:object];
+        [controller setTodoDetail:todo];
     }
 }
 
+- (IBAction)unwindToList:(UIStoryboardSegue *)segue
+{
+    if ([segue.identifier isEqualToString:@"save"]) {
+        AddTodoViewController *svc = segue.sourceViewController;
+        
+        Todo *newTodo = [[Todo alloc] initWithTitle:@"" description:@"" priorityNumber:1];
+        newTodo = svc.todoToAdd;
+        [self.todoList addObject:newTodo];
+        [self.tableView reloadData];
+    }
+}
 
 #pragma mark - Table View
 
@@ -103,7 +105,7 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.objects removeObjectAtIndex:indexPath.row];
+        [self.todoList removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
